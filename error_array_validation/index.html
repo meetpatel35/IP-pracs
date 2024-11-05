@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { margin-top: 50px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Example</h1>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="email" id="userEmail" placeholder="Enter email">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        const form = document.getElementById('userForm');
+        const message = document.getElementById('message');
+
+
+        function validateForm(event) {
+            event.preventDefault(); 
+
+            let username = document.getElementById('username').value;
+            let userEmail = document.getElementById('userEmail').value;
+
+
+            if (!username || !validateEmail(userEmail)) {
+                message.textContent = "Please enter valid username and email.";
+                return;
+            }
+
+            let welcomeMessages = ["Welcome", "Hello", "Greetings"];
+            let selectedMessage = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+            let displayMessage = `${selectedMessage}, ${username}. Your email is ${userEmail}.`;
+            let currentDate = new Date().toDateString();
+            message.textContent = `${displayMessage} Today is ${currentDate}.`;
+            form.reset();
+        }
+        
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+        form.addEventListener('submit', validateForm);
+    </script>
+</body>
+</html>

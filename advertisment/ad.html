@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Management</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Advertisement Management System</h1>
+        <p>Manage and track the performance of your ads.</p>
+    </header>
+
+    <!-- Publish New Ad Section -->
+    <section id="publish-ad">
+        <h2>Publish New Ad</h2>
+        <form action="submit_ad.php" method="post">
+            <label for="ad-title">Ad Title:</label>
+            <input type="text" id="ad-title" name="ad-title" required>
+
+            <label for="ad-type">Ad Type:</label>
+            <select id="ad-type" name="ad-type">
+                <option value="banner">Banner</option>
+                <option value="video">Video</option>
+                <option value="popup">Popup</option>
+            </select>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date">
+
+            <input type="submit" value="Publish Ad">
+        </form>
+    </section>
+
+    <!-- My Ads Table Section -->
+    <section id="my-ads">
+        <h2>My Ads</h2>
+        <table>
+            <tr>
+                <th>Ad Title</th>
+                <th>Ad Type</th>
+                <th>Published Date</th>
+                <th>Sales</th>
+            </tr>
+            <tr>
+                <td>Spring Sale</td>
+                <td>Banner</td>
+                <td>2024-03-01</td>
+                <td>$2,500</td>
+            </tr>
+            <tr class="highlight">
+                <td>Summer Blowout</td>
+                <td>Popup</td>
+                <td>2024-06-15</td>
+                <td>$4,200</td>
+            </tr>
+            <tr>
+                <td>Fall Special</td>
+                <td>Video</td>
+                <td>2024-09-10</td>
+                <td>$3,800</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ad Management Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

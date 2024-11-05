@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+header .logo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+header p {
+    margin: 5px 0;
+}
+
+/* Timetable Section */
+.timetable-section {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #e6f2ff;
+}
+
+td:nth-child(odd) {
+    background-color: #f1f8ff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

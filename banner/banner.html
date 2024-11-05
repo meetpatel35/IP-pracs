@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Management and Analytics</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Banner Management and Analytics</h1>
+        <p>Manage your banners and track performance with detailed insights.</p>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#add-banner">Add Banner</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Manage your existing banners and view their current status.</p>
+
+        <!-- Banner List -->
+        <ul class="banner-list">
+            <li class="active">Banner 1 - Active</li>
+            <li>Banner 2 - Inactive</li>
+            <li>Banner 3 - Scheduled</li>
+            <li class="highlighted">Banner 4 - Highlighted for Promotion</li>
+            <li>Banner 5 - Inactive</li>
+        </ul>
+    </section>
+
+    <!-- Add Banner Section -->
+    <section id="add-banner">
+        <h2>Add New Banner</h2>
+        <form action="submit_banner.php" method="post">
+            <label for="banner-name">Banner Name:</label>
+            <input type="text" id="banner-name" name="banner-name" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="scheduled">Scheduled</option>
+            </select>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date">
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date">
+
+            <input type="submit" value="Add Banner">
+        </form>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics">
+        <h2>Banner Analytics</h2>
+        <table>
+            <tr>
+                <th>Banner Name</th>
+                <th>Views</th>
+                <th>Clicks</th>
+                <th>Click-Through Rate</th>
+            </tr>
+            <tr>
+                <td>Banner 1</td>
+                <td>1200</td>
+                <td>150</td>
+                <td>12.5%</td>
+            </tr>
+            <tr>
+                <td>Banner 2</td>
+                <td>800</td>
+                <td>60</td>
+                <td>7.5%</td>
+            </tr>
+            <tr>
+                <td>Banner 3</td>
+                <td>900</td>
+                <td>90</td>
+                <td>10.0%</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Banner Management Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

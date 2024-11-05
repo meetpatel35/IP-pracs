@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Newspaper</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NewsDaily</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to NewsDaily</h1>
+        <p class="lead">Your one-stop source for the latest news around the globe.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Subscribe Now</a>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Latest News</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content Grid System -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Main News Section -->
+            <div class="col-lg-8">
+                <h2>Top Stories</h2>
+
+                <!-- News Article 1 -->
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/750x300" class="card-img-top" alt="News Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Breaking News: Major Event</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/750x300" class="card-img-top" alt="News Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports Update: Latest Scores</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <h2>Categories</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">World</li>
+                    <li class="list-group-item">Politics</li>
+                    <li class="list-group-item">Business</li>
+                    <li class="list-group-item">Technology</li>
+                    <li class="list-group-item">Health</li>
+                </ul>
+
+                <!-- Newsletter Form -->
+                <h2>Subscribe to Newsletter</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 NewsDaily. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

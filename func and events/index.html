@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { margin-top: 50px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Interactive Page</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="greetButton">Greet Me</button>
+        <p id="greetingMessage"></p>
+    </div>
+
+    <script>
+        // Variables
+        const nameInput = document.getElementById('nameInput');
+        const greetButton = document.getElementById('greetButton');
+        const greetingMessage = document.getElementById('greetingMessage');
+
+        // Function to generate a greeting message
+        function greetUser() {
+            const name = nameInput.value;
+            if (name) {
+                greetingMessage.textContent = "Hello, " + name + "!";
+            } else {
+                greetingMessage.textContent = "Please enter your name.";
+            }
+        }
+
+        // Event listener for button click
+        greetButton.addEventListener('click', greetUser);
+    </script>
+</body>
+</html>
